@@ -2,6 +2,11 @@ body {
 	font-style: italic;
 	text-align: center;
 }
+p {
+	color: purple;
+	background: lightgrey;
+	font-weight: bold;
+	text-align: center;
 
 .Class_A {
 color: blue;
