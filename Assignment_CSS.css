@@ -1,3 +1,18 @@
 .font_1 {
 	text-shadow: 2px 2px 2px gray;
 }
+ul {
+	list-style-type: none;
+	margin-bottom: 3px;
+	font-weight: bold;
+}
+#Spec {
+	font-weight: bold;
+	font-size: 20px;
+	text-shadow: 1px 1px 1px gray;
+}
+#cameras {
+	list-style-type: upper-roman;
+	font-weight: bold;
+	font-size: 15px;
+}
