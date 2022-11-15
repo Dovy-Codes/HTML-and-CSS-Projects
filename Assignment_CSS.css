@@ -16,3 +16,7 @@ ul {
 	font-weight: bold;
 	font-size: 15px;
 }
+a {
+	font-weight: bold;
+	color: gray;
+}
