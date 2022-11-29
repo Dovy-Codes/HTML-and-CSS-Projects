@@ -1,0 +1,15 @@
+table {
+    border-style: solid;
+    text-align: center;
+    color: rgb(214, 214, 214)
+}
+
+th, td {
+    border: solid;
+    border-color: #55708b;
+    
+}
+
+table {
+    background-color: #778899;
+}
