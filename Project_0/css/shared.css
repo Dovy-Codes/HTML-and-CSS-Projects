@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,300;1,400;1,900&display=swap');
 
 html {
     font-family: sans-serif;
@@ -31,13 +31,13 @@ h1, h2, h3, h4, h5, h6 {
 h1{
     line-height: 50px;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 2rem;
     text-align: center;
     color: #E91C1C;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.5)
 }
 
-h1::after{ /* this is fr underline*/
+h1::after{ /* this if for underline */
     display: block;
     content: "";
     height: 2px;
@@ -45,4 +45,115 @@ h1::after{ /* this is fr underline*/
     background: #E91C1C;
     margin: 5px auto 40px;
     box-shadow: 5px 2px 3px rgba(0,0,0,0.5);
+}
+
+h2 {
+    line-height: 50px;
+    color: #E91C1C;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 30px;
+    padding-bottom: 1.25rem;
+}
+
+h4 {
+    padding-top: 25px;
+    line-height: 40px;
+    padding-bottom: 0px;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+p {
+  line-height: 2rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+    
+}
+
+.text_center {
+    text-align: center;
+}
+
+.heading_padding {
+    padding-bottom: 2.5rem;
+}
+
+section {
+    padding-top: 3rem;
+    margin-top: 3rem;
+}
+
+.navbar {
+    height: 105px;
+    max-height: 340px;
+    display: block;
+}
+
+.container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container_fluid {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin-right: -1rem;
+    margin-left: -1rem;
+}
+
+.clearfix:after,
+.container:after,
+.navbar:after {
+    clear: both;
+    display: table;
+    content: " ";
+}
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* This makes sure that images
+        are not rendering outside of view
+        without forcing any scrollbars */
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.menu_container {
+    max-height: 340px;
+    margin: 0% auto;
+    content: " ";
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+/* -----Home Section---------------*/
+
+#home {
+    background: url(../images/FilmCameras.jpg) no-repeat 50% 50%;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 350px; /* Spacer before main title */
+    padding-bottom: 500px; /* Spacer after Main title */
+    color: #fff;
 }
