@@ -32,15 +32,17 @@ a {
     background-color: rgba(3,46,80,255);
 }
 #contacts {
+    position: relative;
     display: flex;
     flex-direction: column;
     padding: 2em 2em 2em 2em;
 }
 
-#contacts input[type="text"] {
-    width: 20%;
+#contacts input[type="text"]{
+    max-width: 150px;
     font-family: 'Roboto Slab', serif;
     font-weight: 500;
+    color: #8D8E8F;
     border-radius: 5px;
     border: 2px solid lightslategrey;
     box-shadow: inset 0px 3px 0px 0px rgba(5,5,5, 0.15);
@@ -51,11 +53,11 @@ a {
 }
 
 #contacts input[type="text"]:hover {
-    box-shadow: 0 0 6px rgba(90, 240, 70, 0.87);
+    box-shadow: 0 0 6px rgba(187, 212, 0, 1);
 }
 
 .book-button {
-    background:rgba(187,212,0,255);
+    background:rgba(187, 212, 0, 1);
     border-radius: 8px;
     border: 2px solid rgba(0, 0, 0, 0.5);
     font-weight: bold;
@@ -66,11 +68,25 @@ a {
 
 .book-button:hover {
     cursor: pointer;
-    background:rgba(90, 240, 70, 0.87);
-    color: rgba(226, 70, 240, .5);
+    background: rgb(143, 161, 0);
+    color: white;
 }
 
 .terms {
     font-family: "ubuntu", sans-serif;
     font-size: .9rem;
+}
+
+.terms:hover {
+    cursor: pointer;
+    color:rgba(187,212,0,1)
+
+}
+
+#text {
+    top:2.5em;
+    right:2.5em;
+    position: absolute;
+    height: 12em;
+    max-width: 12em;
 }
