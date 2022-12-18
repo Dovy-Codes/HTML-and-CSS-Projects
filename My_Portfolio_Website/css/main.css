@@ -1,0 +1,219 @@
+
+/**------Global Variables and broad styles-----
+-------------------------------------**/
+
+:root {
+    --white: rgb(238, 237, 237);
+    --green-dark: #076824;
+    --yellow: #f29e01;
+    --yellow-dark: #af6e08;
+    --red: #d44840;
+    --red-dark: #aa3835;
+    --grey: #f0f2f2;
+    --grey-dark: #b5b9ba;
+    --grey-Xdark: #272b2b;
+    --black: #181818;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+  
+body, body * {
+    margin: 0;
+    padding: 0;
+}
+
+.low-line-height {
+    line-height: 0.5;
+}
+
+body {
+    background-color: var(--grey-Xdark);
+}
+
+.container {
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+/**---------Typography----------------
+-------------------------------------**/
+
+body {
+    font-family: 'Ubuntu', serif;
+    text-align: center;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+form {
+    font-family: 'Ubuntu', serif;
+}
+
+form .btn{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.github-text p, a {
+    font-weight: 500;
+}
+
+/**---------Navigation----------------
+-------------------------------------**/
+
+ul {
+    display: flex;
+    width: 100%;
+    background-color: var(--black);
+}
+
+.list-items {
+    padding: 0.5em;
+    font-size: 1.2rem;
+}
+
+.nav-home {
+    background-color: var(--grey-Xdark);
+    border-radius: 3px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+/**---------Header----------------------
+-------------------------------------**/
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url("../images/keyboard-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    color: var(--white);
+    font-size: 1.1rem;
+}
+
+h1 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.Van-Gogh {
+    margin-bottom: 1em;
+    font-style: italic;
+}
+
+.welcome {
+    /* padding-bottom: 2em; */
+    padding: 0em 3em 2em 3em;
+}
+
+q::before {
+    content: open-quote;
+    font-size: 1.4rem;
+}
+
+q::after {
+    content: close-quote;
+    font-size: 1.4rem;
+}
+
+/**---------About---------------------
+-------------------------------------**/
+
+#about {
+    color: var(--white);     
+}
+
+.link {
+    color: var(--yellow);
+}
+
+.computer {
+    padding: 3em 1em 0 1em;
+}
+
+.computer img {
+    border-radius: 8px;
+}
+
+#box-2 {
+    padding: 0 1em 3em 1em;
+}
+
+.about-text {
+    padding-bottom: 2em;
+}
+/**---------Github--------------------
+-------------------------------------**/
+#github {
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 1em 0 5em 0;
+}
+
+/** At bigger Screen size I want this header to exist 
+and at smaller I want the Github Logo to act as a header **/
+@media only screen and (max-width:700px) {
+    .github-text h2 {
+        display: none;
+    }
+}
+
+.github-img {
+    margin-bottom:3em;
+}
+
+.github-text p {
+    padding-bottom: 1em;
+}
+
+/**---------Form----------------------
+-------------------------------------**/
+#contact {
+    margin-top: 4em;
+}
+
+.message-img {
+    padding: 1em 1em 0 1em;
+}
+
+.message-img img{
+    border-radius: 8px;
+}
+/**---------Footer--------------------
+-------------------------------------**/
+footer {
+    Margin-top: 5em;
+    padding: 2em 0;
+    width:100%;
+    background-color: var(--white);
+    font-weight: 500;
+}
