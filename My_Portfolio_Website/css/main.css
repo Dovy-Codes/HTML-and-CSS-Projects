@@ -132,7 +132,7 @@ h1 {
 
 .welcome {
     /* padding-bottom: 2em; */
-    padding: 0em 3em 2em 3em;
+    padding: 2em 1em;
 }
 
 q::before {
@@ -200,6 +200,10 @@ and at smaller I want the Github Logo to act as a header **/
 #contact {
     margin-top: 4em;
 }
+.form-box {
+    align-content: center;
+    text-align: center;
+}
 
 .message-img {
     padding: 1em 1em 0 1em;
@@ -208,6 +212,16 @@ and at smaller I want the Github Logo to act as a header **/
 .message-img img{
     border-radius: 8px;
 }
+
+label, input {
+    display:flex;
+    flex-direction:column;
+}
+
+label {
+    color: var(--white)
+}
+
 /**---------Footer--------------------
 -------------------------------------**/
 footer {
