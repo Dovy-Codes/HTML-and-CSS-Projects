@@ -200,8 +200,7 @@ and at smaller I want the Github Logo to act as a header **/
 #contact {
     margin-top: 4em;
 }
-.form-box {
-    align-content: center;
+form {
     text-align: center;
 }
 
@@ -213,14 +212,16 @@ and at smaller I want the Github Logo to act as a header **/
     border-radius: 8px;
 }
 
-label, input {
-    display:flex;
-    flex-direction:column;
-}
 
 label {
-    color: var(--white)
+    color: var(--white);
+    display: block;
 }
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+} 
 
 /**---------Footer--------------------
 -------------------------------------**/
