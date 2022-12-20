@@ -5,8 +5,8 @@
 :root {
     --white: rgb(238, 237, 237);
     --green-dark: #076824;
-    --yellow: #f29e01;
-    --yellow-dark: #af6e08;
+    --yellow: #f1c500;
+    --yellow-dark: #b49300;
     --red: #d44840;
     --red-dark: #aa3835;
     --grey: #f0f2f2;
@@ -47,6 +47,10 @@ img {
     max-width: 100%;
 }
 
+.center {
+    text-align: center;
+}
+
 /**---------Typography----------------
 -------------------------------------**/
 
@@ -63,14 +67,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.25em;
 }
 
 form {
     font-family: 'Ubuntu', serif;
+    font-weight: 700;
 }
 
-form .btn{
+form input[type="submit"]{
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
 }
@@ -128,11 +133,16 @@ h1 {
 .Van-Gogh {
     margin-bottom: 1em;
     font-style: italic;
+    padding-top: .5em;
 }
 
 .welcome {
     /* padding-bottom: 2em; */
     padding: 2em 1em;
+}
+
+q {
+    line-height: 0;
 }
 
 q::before {
@@ -199,9 +209,14 @@ and at smaller I want the Github Logo to act as a header **/
 -------------------------------------**/
 #contact {
     margin-top: 4em;
+    border: 2px solid var(--white);
+    border-radius: 5px;
 }
 form {
-    text-align: center;
+    max-width: 500px;
+    padding: 0 2rem .2rem 2rem;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .message-img {
@@ -212,15 +227,34 @@ form {
     border-radius: 8px;
 }
 
+form input[type="text"], textarea {
+    display: block;
+    width: 100%;
+}
 
-label {
+form input[type="text"] {
+    padding: .3em 0;
+}
+
+textarea{
+    padding: 1em 0;
+}
+
+form label {
     color: var(--white);
     display: block;
+    font-size: 0.8em;
+    padding-top: 1em;
 }
 
 input[type="submit"] {
-    display: block;
-    margin: 0 auto;
+    width: 6rem;
+    padding: .2em 1em;
+    margin-top: .2rem;
+    border-radius: 5px;
+    border-color: var(--yellow) ;
+    background-color: var(--yellow);
+    color: var(--black);
 } 
 
 /**---------Footer--------------------
