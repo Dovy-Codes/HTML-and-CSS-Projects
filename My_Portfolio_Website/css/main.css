@@ -172,6 +172,7 @@ q::after {
 
 .computer img {
     border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.50);
 }
 
 #box-2 {
@@ -225,6 +226,7 @@ form {
 
 .message-img img{
     border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.50);
 }
 
 form input[type="text"], textarea {
