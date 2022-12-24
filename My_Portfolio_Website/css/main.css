@@ -10,7 +10,7 @@
     --red: #d44840;
     --red-dark: #aa3835;
     --grey: #f0f2f2;
-    --grey-dark: #b5b9ba;
+    --grey-dark: #7b8383;
     --grey-Xdark: #272b2b;
     --black: #181818;
 }
@@ -91,18 +91,35 @@ ul {
 
 /**---------Navigation----------------
 -------------------------------------**/
+nav {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+}
 
 ul {
     display: flex;
-    width: 100%;
+    justify-content: center;
+
     background-color: var(--black);
 }
 
 .list-items a{
     display: block;
-    padding: 0.5em;
-    font-size: 1.2rem;
+    padding: .5em;
+    font-size: 1.1rem;
+    line-height: 1;
+    text-decoration: none;
+    color: var(--white);
+    margin-inline: auto;
 }
+
+.nav-other:hover a{
+    background-color: var(--grey);
+    color: var(--grey-Xdark);
+    border-radius: 3px;
+    }
 
 .nav-home {
     background-color: var(--grey-Xdark);
@@ -110,21 +127,17 @@ ul {
 }
 
 .nav-home:hover a{
-    color: var(--grey-Xdark);
+    color: var(--yellow);
+    background-color: var(--grey-dark);
+    border-radius: 3px;
 }
 
-.nav-home:hover {
-background-color: var(--grey);
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--white);
-}
 
 /**---------Hero----------------------
 -------------------------------------**/
 .Hero {
+    display: block;
+    padding-top: 3rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url("../images/keyboard-1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -199,14 +212,6 @@ q::after {
     padding: 1em 0 5em 0;
 }
 
-/** At bigger Screen size I want this header to exist 
-and at smaller I want the Github Logo to act as a header **/
-@media only screen and (max-width:700px) {
-    .github-text h2 {
-        display: none;
-    }
-}
-
 .github-img {
     margin-bottom:3em;
 }
@@ -276,4 +281,22 @@ footer {
     width:100%;
     background-color: var(--white);
     font-weight: 500;
+}
+
+/**---------@Media--------------------
+-------------------------------------**/
+
+/** If Screen is bigger than 400px **/
+@media only screen and (min-width:400px) {
+    .list-items a {
+        font-size: 1.5rem;
+    }
+}
+
+/** At bigger Screen size I want this header to exist 
+and at smaller I want the Github Logo to act as a header **/
+@media only screen and (max-width:700px) {
+    .github-text h2 {
+        display: none;
+    }
 }
