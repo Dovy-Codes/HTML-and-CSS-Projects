@@ -113,9 +113,9 @@ nav a {
     color: var(--white);
 }
 
-/**---------Header----------------------
+/**---------Hero----------------------
 -------------------------------------**/
-.header {
+.Hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url("../images/keyboard-1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
