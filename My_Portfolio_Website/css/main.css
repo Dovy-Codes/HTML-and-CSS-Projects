@@ -98,7 +98,8 @@ ul {
     background-color: var(--black);
 }
 
-.list-items {
+.list-items a{
+    display: block;
     padding: 0.5em;
     font-size: 1.2rem;
 }
@@ -106,6 +107,14 @@ ul {
 .nav-home {
     background-color: var(--grey-Xdark);
     border-radius: 3px;
+}
+
+.nav-home:hover a{
+    color: var(--grey-Xdark);
+}
+
+.nav-home:hover {
+background-color: var(--grey);
 }
 
 nav a {
