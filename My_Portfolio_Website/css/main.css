@@ -204,6 +204,37 @@ q::after {
 .about-text {
     padding-bottom: 2em;
 }
+.programming-logos {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.p-logo {
+    width: 50px;
+    height: 55px;
+    margin-inline: .25em;
+}
+
+.framework-logos {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.f-logo {
+    height:55px;
+    margin-inline: .25em;
+}
+
+.visualSoft-logos {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.vs-logo {
+    height:55px;
+    margin-inline: .25em;
+}
+
 /**---------Github--------------------
 -------------------------------------**/
 #github {
@@ -220,6 +251,9 @@ q::after {
     padding-bottom: 1em;
 }
 
+#github-logo{
+    height:75px;
+}
 /**---------Form----------------------
 -------------------------------------**/
 #contact {
@@ -270,7 +304,7 @@ input[type="submit"] {
     border-radius: 5px;
     border-color: var(--yellow) ;
     background-color: var(--yellow);
-    color: var(--black);
+    color: var(--white);
 } 
 
 /**---------Footer--------------------
