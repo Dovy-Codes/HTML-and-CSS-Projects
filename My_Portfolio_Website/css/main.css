@@ -148,8 +148,7 @@ ul {
 }
 
 h1 {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 1em 0.25em;
 }
 
 .Van-Gogh {
@@ -159,7 +158,6 @@ h1 {
 }
 
 .welcome {
-    /* padding-bottom: 2em; */
     padding: 2em 1em;
 }
 
@@ -204,6 +202,8 @@ q::after {
 .about-text {
     padding-bottom: 2em;
 }
+/*-----------Programing Logos--------*/
+
 .programming-logos {
     margin-top: 1em;
     margin-bottom: 2em;
@@ -215,6 +215,12 @@ q::after {
     margin-inline: .25em;
 }
 
+#js-logo {
+    width: 55px;
+}
+
+/*-----------Framework Logos---------*/
+
 .framework-logos {
     margin-top: 1em;
     margin-bottom: 2em;
@@ -224,6 +230,8 @@ q::after {
     height:55px;
     margin-inline: .25em;
 }
+
+/*------Visual Software Logos--------*/
 
 .visualSoft-logos {
     margin-top: 1em;
@@ -277,17 +285,25 @@ form {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.50);
 }
 
-form input[type="text"], textarea {
+form input[type="text"], input[type="email"], textarea {
     display: block;
     width: 100%;
+    border-radius: 8px;
+    border-color: var(--white);
+    box-shadow: inset 0px 3px 1px 0px rgba(5,5,5, 0.15);
 }
 
-form input[type="text"] {
-    padding: .3em 0;
+form input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    outline: 2px solid var(--yellow);
+}
+
+form input[type="text"], input[type="email"], textarea  {
+    padding: .3125em 0 .3125em .3125em ;
 }
 
 textarea{
-    padding: 1em 0;
+    /* padding: 1em 0; */
+    min-height: 5rem;
 }
 
 form label {
@@ -300,12 +316,21 @@ form label {
 input[type="submit"] {
     width: 6rem;
     padding: .2em 1em;
-    margin-top: .2rem;
+    margin: 1rem 0;
     border-radius: 5px;
     border-color: var(--yellow) ;
     background-color: var(--yellow);
-    color: var(--white);
+    color: var(--grey-Xdark);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.50);
+    transition-property: background-color, border-color, color;
+    transition: 300ms ease-in-out;
 } 
+
+input[type="submit"]:hover {
+    background-color: var(--yellow-dark);
+    border-color: var(--yellow-dark) ;
+    color: var(--white);
+}
 
 /**---------Footer--------------------
 -------------------------------------**/
@@ -320,13 +345,37 @@ footer {
 /**---------@Media--------------------
 -------------------------------------**/
 
-/** If Screen is bigger than 400px **/
-@media only screen and (min-width:400px) {
+/** If Screen is bigger than 500px **/
+@media only screen and (min-width:500px) {
     .list-items a {
-        font-size: 1.5rem;
+        font-size: 1.3125rem;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    #about, #github, #contact{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #box-1, #box-2, #box-3, #box-4, #box-5, #box-6 {
+        min-width: 500px;
+        max-width: 50%;
+        /* max-width: max(50%, 700px); */
+        padding-bottom: 0;
+    }
+    .computer {
+        padding: 1em;
     }
 }
 
+/** If screen size is smaller then 1015px **/
+@media only screen and (max-width:1015px) {
+    #box-1, #box-2 {
+    max-width: 100%;
+    }
+}
 /** At bigger Screen size I want this header to exist 
 and at smaller I want the Github Logo to act as a header **/
 @media only screen and (max-width:700px) {
