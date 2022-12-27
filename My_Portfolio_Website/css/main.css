@@ -19,6 +19,7 @@ html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
   *, *:before, *:after {
     -webkit-box-sizing: inherit;
@@ -340,6 +341,7 @@ footer {
     width:100%;
     background-color: var(--white);
     font-weight: 500;
+    color: var(--grey-dark);
 }
 
 /**---------@Media--------------------
@@ -350,36 +352,54 @@ footer {
     .list-items a {
         font-size: 1.3125rem;
     }
+
     h1 {
         font-size: 3em;
+    }
+
+    .github-text p {
+        font-size: 1.25rem;
     }
     #about, #github, #contact{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        /* justify-content:; */
         align-items: center;
+        padding: 1em 0;
     }
+
     #box-1, #box-2, #box-3, #box-4, #box-5, #box-6 {
         min-width: 500px;
         max-width: 50%;
         /* max-width: max(50%, 700px); */
-        padding-bottom: 0;
+        /* padding-bottom: 0; */
+        padding: 2em;
     }
+
+    #box-3, #box-6 {
+        margin-inline: auto;
+    }
+
     .computer {
         padding: 1em;
+    }
+
+    form {
+        max-width: 100%;
     }
 }
 
 /** If screen size is smaller then 1015px **/
-@media only screen and (max-width:1015px) {
-    #box-1, #box-2 {
-    max-width: 100%;
+@media only screen and (max-width:1021px) {
+    #box-1, #box-2, #box-3, #box-5, #box-6 {
+        max-width: 100%;
     }
-}
-/** At bigger Screen size I want this header to exist 
-and at smaller I want the Github Logo to act as a header **/
-@media only screen and (max-width:700px) {
-    .github-text h2 {
-        display: none;
+    #box-4 {
+        max-width: 80%;
+        margin-inline: auto;
+        padding-bottom: 0;
+    }
+    .github-img {
+        margin-bottom: 1em;
     }
 }
