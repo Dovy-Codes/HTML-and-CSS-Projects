@@ -37,6 +37,7 @@ body, body * {
 }
 
 body {
+    text-align: center;
     background-color: var(--grey-Xdark);
 }
 
@@ -57,7 +58,6 @@ img {
 
 body {
     font-family: 'Ubuntu', serif;
-    text-align: center;
     line-height: 1.6;
 }
 
@@ -140,7 +140,7 @@ ul {
 .Hero {
     display: block;
     padding-top: 3rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url("../images/keyboard-1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url("../images/keyboard-2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -361,11 +361,11 @@ input[type="submit"]:hover {
 /**---------Footer--------------------
 -------------------------------------**/
 footer {
+    font-size:.75rem;
     Margin-top: 5em;
     padding: 2em 0;
     width:100%;
     background-color: var(--white);
-    font-weight: 500;
     color: var(--grey-dark);
 }
 
@@ -386,15 +386,17 @@ footer {
         font-size: 1.25rem;
     }
     #about, #github, #contact{
+        max-width: 1440px;
         display: flex;
         flex-wrap: wrap;
         /* justify-content:; */
         align-items: center;
         padding: 1em 0;
+        margin-inline: auto;
     }
 
     #box-1, #box-2, #box-3, #box-4, #box-5, #box-6 {
-        min-width: 500px;
+        /* min-width: 500px; */
         max-width: 50%;
         /* max-width: max(50%, 700px); */
         /* padding-bottom: 0; */
@@ -403,6 +405,10 @@ footer {
 
     #box-3, #box-6 {
         margin-inline: auto;
+    }
+
+    #box-6 {
+        min-width: min(80%, 500px);
     }
 
     .computer {
@@ -414,8 +420,8 @@ footer {
     }
 }
 
-/** If screen size is smaller then 1015px **/
-@media only screen and (max-width:1021px) {
+/** If screen size is smaller then 1054px **/
+@media only screen and (max-width:1054px) {
     #box-1, #box-2, #box-3, #box-5, #box-6 {
         max-width: 100%;
     }
