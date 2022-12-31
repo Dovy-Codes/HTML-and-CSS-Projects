@@ -1,28 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Col element practice</title>
-        <link rel="stylesheet" href="style.css">
+        <title>London</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Mukta:wght@200;300;500;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="table_container">
+
+<!-----------------Hero-----------------
+---------------------------------------->
+
+        <section id="hero">
+            <div class="hero-text">
+                <h1>Welcome to London</h1>
+            </div>
+            <div class="img-container">
+                <img src="./images/London.jpg" alt="image of Lodon">
+            </div>
+        </section>
+
+<!----------Our Tour Guides--------------
+---------------------------------------->
+
+        <section id="table">
+            <h2>Our Tour Guides</h2>
             <table>
-                <colgroup>
-                <col bgcolor = darkgreen>
-                </colgroup>
                 <tr>
-                    <th></th>
-                    <th>Apple</th>
-                    <th>Banana</th>
-                    <th>Grapes</th>
+                    <th id="header-left">Name</th>
+                    <th>Contact</th>
+                    <th id="header-right">Tour Starts</th>
                 </tr>
                 <tr>
-                    <td>Calories</td>
-                    <td>52 cal</td>
-                    <td>89 cal</td>
-                    <td>67 cal</td>
+                    <td>Jessica Stone</td>
+                    <td>JessicaStone@Londontour.co.uk</td>
+                    <td>Tower bridge</td>
+                </tr>
+                <tr>
+                    <td>William Wills</td>
+                    <td>WilliamWills@Londontour.co.uk</td>
+                    <td>Shakespeare's Globe</td>
+                </tr>
+                <tr>
+                    <td>Rob Smith</td>
+                    <td>RobSmith@Londontour.co.uk</td>
+                    <td>Trafalgar Square</td>
                 </tr>
             </table>
-        </div>
+        </section>
+
+<!----------Locations-------------------
+---------------------------------------->
+
+        <section id="locations">
+            <h2>Start our tour here</h2>
+            <div class="image-flex">
+                <div class="image-container">
+                    <img src="./images/tower-bridge-2.jpg" alt="Tower Bridge">
+                    <h3 class="image-overlay" id="Tower-text">Tower Bridge</h3>
+                </div>
+                <div class="image-container">
+                    <img src="./images/shakespeare-globe-2.jpg" alt="Shakespeare's Globe">
+                    <h3 class="image-overlay" id="Globe-text">Shakespeare's Globe</h3>
+                </div>
+                <div class="image-container">
+                    <img src="./images/trafalgar-2.jpg" alt="Trafalgar Square">
+                    <h3 class="image-overlay" id="Trafalgar-text">Trafalgar Square</h3>
+                </div>
+            </div>
+        </section>
+
+<!----------Footer-----------------------
+---------------------------------------->
+
+        <footer>
+            <p>&copy; Dovydas Pocius &nbsp;|&nbsp; Dovy-Codes</p>
+        </footer>
     </body>
 </html>
