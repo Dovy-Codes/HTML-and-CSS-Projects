@@ -215,8 +215,9 @@ td {
     display: flex;
     flex-direction: column;
     margin: 2em;
-    width: 30%;
-    min-height: 40vh;
+    min-width: 300px;
+    /* width: clamp(250px, 320px, 400px); */
+    min-height: 450px;
     text-align: center;
     background-color: var(--purple-low);
     border: 3px solid var(--red-low);
@@ -237,7 +238,7 @@ td {
 
 .tours-header {
     padding: 0.25em 0;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     background-color: var(--red-low);
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
@@ -249,7 +250,7 @@ td {
     margin-top: auto;
 }
 
-/**Pushing down text in that says group of**/
+/**Pushing down text in the card**/
 .group {
     margin-top: .5em;
 }
@@ -259,7 +260,7 @@ td {
     padding: 0.25em 1.5em;
     font-family: inherit;
     font-weight: 700;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     border-radius: 30px;
     border: none;
     background-color: var(--red-low);
@@ -276,21 +277,39 @@ button:hover{
 }
 
 .collumn p {
-    font-size: 1.25em;
+    font-size: 1rem;
 
 }
 
 .collumn li{
-    font-size: 1em;
+    font-size: 1rem;
 
 }
 
 .price {
-    font-size: 2.5em !important;
+    font-size: 3rem !important;
+    color: var(--blue);
+    font-weight: 700;
 }
 
 
+/**---------About----------------------
+-------------------------------------**/
 
+#about {
+    margin-inline: auto;
+    text-align: center;
+}
+
+#about p {
+    color: var(--red);
+    background-color: var(--purple-low);
+    border-radius: 8px;
+    border: 3px solid var(--red);
+    margin: 3em 2em;
+    padding: 2em 2em;
+    font-size: 1rem;
+}
 
 /**---------Footer----------------------
 -------------------------------------**/
