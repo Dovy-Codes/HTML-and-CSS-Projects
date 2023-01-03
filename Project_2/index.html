@@ -2,6 +2,8 @@
 <html lang="en">
     <head>
         <title>London</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="./style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -132,7 +134,16 @@
 ---------------------------------------->
         <section id="about">
             <h2>About us</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            <div class="video-container">
+                <video autoplay muted loop>
+                    <source src="./video/London.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div id="video-overlay">
+                    <p>London</p>
+                </div>
+            </div>
+            <p id="about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Debitis totam error distinctio fuga mollitia, in quisquam 
                 quibusdam aperiam sunt quas necessitatibus amet repudiandae
                 hic cum veniam maiores, itaque sed aspernatur laborum? 
