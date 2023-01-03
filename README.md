@@ -1,15 +1,16 @@
 # This Folder is my HTML and CSS safe
 
-I have various project stored here and other files that I find useful
+I have various project stored here and other files that I find useful.
 
-## Folders in this directory
-    *Boostrap
-    *Layout_and_Transition_Practice
-    *My_Portfolio_Website
-    *One_Page_Website
-    *Project_0
-    *Project_1
-    *Project_2
+###Folders in this directory:
+
+*Boostrap
+*Layout_and_Transition_Practice
+*My_Portfolio_Website
+*One_Page_Website
+*Project_0
+*Project_1
+*Project_2
 
 ## Boostrap
 
