@@ -7,7 +7,6 @@ I have various project stored here and other files that I find useful.
 * Boostrap
 * Layout_and_Transition_Practice
 * My_Portfolio_Website
-* One_Page_Website
 * Project_0
 * Project_1
 * Project_2
