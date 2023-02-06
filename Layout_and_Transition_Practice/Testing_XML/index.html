@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML Test</title>
+</head>
+<body>
+    <p id="XML_Example"></p>
+    <script>
+        let XLM_Parser, XLM_Document;
+
+        //Creates a new string
+        var movie = "<movie>" +
+        "<title>Oblivion</title>" +
+        "<director>Joseph Kosinski</director>" +
+        "<starring>Tom Cruise</starring>" +
+        "<year>2013</year>" +
+        "</movie>";
+
+        //Creates DOM parser
+        XLM_Parser = new DOMParser();
+
+        //Creates a new XML DOM object using the text string
+        XLM_Document = XLM_Parser.parseFromString(movie, "text/xml");
+
+        document.getElementById("XML_Example").innerHTML = 
+        XLM_Document.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+    </script>
+</body>
+</html>
