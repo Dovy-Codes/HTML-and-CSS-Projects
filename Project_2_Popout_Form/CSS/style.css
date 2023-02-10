@@ -1,0 +1,97 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body, body * {
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+h2{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+#loginPop{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 1rem 7rem;
+    border: none;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 1.5rem;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+
+#loginPop:hover{
+    background-color: lightgray;
+}
+
+.popoutForm{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+form{
+    max-width: 300px;
+    padding: 10px;
+}
+
+form input{
+    width: 100%;
+    padding: 1rem;
+    margin: 5px 0 22px 0;
+    border: none;
+    border-radius: 8px;
+    background: #f1f1f1;
+}
+
+form button {
+    width: 100%;
+    padding: .75rem;
+    margin-bottom: .25rem;
+    border: none;
+    font-family: monospace;
+    font-weight: 900;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#login{
+    background-color: rgb(47, 255, 109);
+    transition: 300ms ease-in-out;
+}
+#login:hover{
+    background-color: rgb(38, 207, 89);
+}
+
+#close{
+    background-color: tomato;
+    transition: 300ms ease-in-out;
+}
+
+#close:hover{
+    background-color: rgb(201, 77, 55);
+}
