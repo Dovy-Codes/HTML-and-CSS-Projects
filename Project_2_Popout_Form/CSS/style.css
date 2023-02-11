@@ -27,7 +27,7 @@ h2{
     font-size: 2rem;
 }
 #loginPop{
-    position: fixed;
+    position: sticky;
     bottom: 1rem;
     right: 1rem;
     padding: 1rem 7rem;
